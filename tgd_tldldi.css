@@ -114,16 +114,6 @@ header #header-bar .fa {
   height: 0.15em;
 }
 
-/* board-info button effect */
-#board-info > #board-info-bottom > a{
-    transition: 150ms;
-}
-#board-info > #board-info-bottom > :hover {
-    transform: scale(1.05);
-    color: var(--board-info-link-hover-color);
-    text-decoration: underline;
-}
-
 /* list */
 
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
