@@ -1,4 +1,5 @@
 /* made by. lcmykr */
+/* Reproduction prohibited */ 
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html {
@@ -215,4 +216,34 @@ span.a-badge i.fa.fa-info-circle {
 
 .btn-primary {
   background: #4abaff !important;
+}
+
+/* writing board */
+#article-list>.article-list-row {
+	border: none !important;
+	transition: 0.2s;
+}
+
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:focus {
+	transform: scale(1.01);
+	transition: 0.2s;
+}
+
+#article-list>.article-list-row.hot,
+}
+
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus,
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus,
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus,
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus {
+
+}
+
+#article-list>.article-list-row>.item>.list-header {
+	border-left: none;
 }
