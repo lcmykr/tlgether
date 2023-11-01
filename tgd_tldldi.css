@@ -1,7 +1,12 @@
 /* DO NOT MODIFY THE CODE AFTER DUPLICATION, ITS A CREATED BY Lcmykr. */
 /* 복제 및 코드 수정 금지, made by. lcmykr */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&display=swap');
+
+:root {
+    --접속자수-font-size: 1.4rem;
+}
+
 html {
   background: linear-gradient(to bottom, #b3d0f2, #b3d0f2);
   height: auto !important;
@@ -62,21 +67,19 @@ header #right-search-form>input[type='text']:focus {
 
 #board-info #viewers-area {
     color: #00a6ff;
+    font-size: var(--접속자수-font-size);
+    font-weight: 800;
 }
 
 #board-info #viewers-area #viewers:before {
     content: "샤육수 ";
     color: #00a6ff;
     cursor: text;
-	font-weight:normal;
-        font-size: 14px;
 }
 #board-info #viewers-area #viewers:after {
     content: "명 접속중";
     color: #00a6ff;
     cursor: text;
-	font-weight:normal;
-	font-size: 14px;
 }
 
 #viewers-area>i{
@@ -93,6 +96,10 @@ header #right-search-form>input[type='text']:focus {
     display: grid;
     grid-template-columns: 8rem 1fr;
     grid-template-rows: auto auto;
+}
+
+#board-info h1 {
+    font-weight: 700;
 }
 
 #board-info img{
@@ -183,30 +190,49 @@ header #header-bar>.row,
 }
 
 /* tgdkr Pages */
-.pagination>li>a,
-.pagination>li>span,
-.pagination>li>a:focus,
-.pagination>li>span:focus {
-	color: var(--mainColor);
-	background: transparent !important;
-	transition: 0.2s;
-}
+
 .pagination>.active>a,
-.pagination>.active>span,
 .pagination>.active>a:focus,
-.pagination>.active>span:focus {
-	background-color: var(--mainColor) !important;
-	border-color: var(--mainColor) !important;
-	transition: 0.2s;
+.pagination>.active>a:hover{
+border: 1px solid #4abaff;
 }
-.pagination>li>a:hover,
-.pagination>li>span:hover,
+
+.pagination>li>a, .pagination>li>span{
+color: #4abaff;
+border: 1px solid #4abaff;
+border-bottom: 1px solid #4abaff;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
 .pagination>.active>a:hover,
-.pagination>.active>span:hover {
-	color: var(--mainColor) !important;
-	background-color: white !important;
-	border-color: var(--mainColor) !important;
-	transition: 0.2s;
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover{
+background: #2a8cff;
+margin-top: 1px;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover{
+    color: #fff;
+    background: #2a8cff;
+    border: 1px solid #2a8cff;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover{
+    color: #fff;
+    background: #2a8cff ;
+    border: 1px solid #2a8cff ;
+    font-weight: bold;
+    margin-top: 1px;
 }
 
 /* hadder */
@@ -224,7 +250,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* fa color */
 
 header #header-bar .fa {
-  color: #4abaff;
+  color: #2a8cff;
 }
 
 /* stream color */
@@ -281,13 +307,6 @@ header #header-bar .fa {
 .pagination>.active>span:hover {
   background-color: #2a8cff;
   border-color: #2a8cff;
-}
-
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-  color: #2a8cff;
 }
 
 .pagination>li>a,
