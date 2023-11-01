@@ -1,7 +1,7 @@
 /* DO NOT MODIFY THE CODE AFTER DUPLICATION, ITS A CREATED BY Lcmykr. */
 /* 복제 및 코드 수정 금지, made by. lcmykr */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 html {
   background: linear-gradient(to bottom, #b3d0f2, #b3d0f2);
   height: auto !important;
@@ -9,7 +9,7 @@ html {
 body {
 letter-spacing: -0.05em !important;
   background: transparent;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* header-all */
@@ -69,14 +69,14 @@ header #right-search-form>input[type='text']:focus {
     color: #00a6ff;
     cursor: text;
 	font-weight:normal;
-        font-size: 16px;
+        font-size: 14px;
 }
 #board-info #viewers-area #viewers:after {
     content: "명 접속중";
     color: #00a6ff;
     cursor: text;
 	font-weight:normal;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #viewers-area>i{
